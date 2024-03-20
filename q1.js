@@ -5,7 +5,7 @@ reversing the digits, determine whether the resulting number has any prime facto
 have prime factors, return 'Yes' along with the list of prime factors; otherwise, return 'No'."
 */
 
-let x = 1000;
+//const prompt = require('prompt-sync')();
 
 function revNum(val) {
     let sum = 0;
@@ -30,7 +30,7 @@ function chkPrime(val) {
     return true;
 }
 
-function work() {
+function work(x) {
     let tmp = revNum(x);
     let arr = []
 
@@ -48,4 +48,6 @@ function work() {
         console.log("No")
 }
 
-work()
+// Enter an integer below greater than 0:
+let tmp = 123;
+work(tmp)

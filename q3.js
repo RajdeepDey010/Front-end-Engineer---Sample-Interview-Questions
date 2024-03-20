@@ -4,10 +4,7 @@ space-separated sequence of one or more array words.
 Note that the same word in the array may be reused multiple times in the segmentation
 */
 
-let s = "leetcode";
-let wordArray = ["leet","code"]
-
-function work() {
+function work(s,wordArray) {
     let tmp = wordArray.join('')
     if(s.includes(tmp))
         return true
@@ -15,4 +12,7 @@ function work() {
         return false
 }
 
-console.log(work())
+//Enter a string and the array of strings below
+let tmp = "leetcode";
+let temp = ["leet","code"]
+console.log(work(tmp,temp))

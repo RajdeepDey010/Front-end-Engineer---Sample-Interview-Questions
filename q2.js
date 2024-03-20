@@ -4,7 +4,6 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 typically using all the original letters exactly once.
 */
 
-let strs = ["eat","tea","tan","ate","nat","bat"]
 
 function chkAng(wrd1, wrd2) {
     if (wrd1.length != wrd2.length)
@@ -31,8 +30,9 @@ function chkAng(wrd1, wrd2) {
     return true;
 }
 
-let res = []
-function work() {
+function work(strs) {
+    let res = [];
+
     for (let i = 0; i < strs.length; i++) {
         let tmp = []
         if (strs[i] != -1) {
@@ -50,7 +50,9 @@ function work() {
         }
 
     }
+    return res;
 }
 
-work()
-console.log(res)
+//Enter an array words below to check for anagram
+let tmp = ["eat","tea","tan","ate","nat","bat"]
+console.log(work(tmp))

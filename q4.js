@@ -3,7 +3,6 @@ Given an array of non-negative integers nums, arrange them such that they form t
 Note return the result in the form of string
 */
 
-let nums = [10,2]
 
 function work(arr){
 
@@ -14,4 +13,6 @@ function work(arr){
     return temp
 }
 
+//Enter an array of non-negative integers below
+let nums = [10,2]
 console.log(work(nums))
